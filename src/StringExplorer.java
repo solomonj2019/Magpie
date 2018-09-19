@@ -30,5 +30,21 @@ public class StringExplorer
 		
 		int notFoundPsn = sample.indexOf("slow"); 
 		System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
+		
+		//experiment with compareTo
+		
+		String example1 = "U";
+		String example2 = "p";
+		System.out.println(example1.compareTo(example2));
+		//origianl part is where you start 
+		
+		//experiment with substring
+		String starter = "start middle end";
+		System.out.println(starter.substring(10, starter.length())); 
+		//starts at letter at that position and goes to end
+		//overloaded method = programmed twice 
+		//upperbound is noninclusive 
+		int psn1 = starter.indexOf("middle");
+		System.out.println(starter.substring(psn1, psn1+6));
 	}
 }
